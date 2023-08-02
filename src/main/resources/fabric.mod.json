@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
+  "id": "oldfag_addons",
   "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for the Meteor addons.",
+  "name": "Oldfag Addons",
+  "description": "Meteor Addons for Oldfag.org.",
   "authors": [
-    "seasnail"
+    "CreamyGuy/GameIron1112"
   ],
   "contact": {
     "repo": "https://github.com/MeteorDevelopment/meteor-addon-template"
@@ -14,11 +14,11 @@
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "com.example.addon.Addon"
+      "creamy.oldfag_addons.Addon"
     ]
   },
   "mixins": [
-    "addon-template.mixins.json"
+    "oldfag_addons.mixins.json"
   ],
   "custom": {
     "meteor-client:color": "225,25,25"

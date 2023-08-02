@@ -1,8 +1,9 @@
-package com.example.addon;
+package creamy.oldfag_addons;
 
-import com.example.addon.commands.CommandExample;
-import com.example.addon.hud.HudExample;
-import com.example.addon.modules.ModuleExample;
+import creamy.oldfag_addons.commands.CommandExample;
+import creamy.oldfag_addons.hud.HudExample;
+import creamy.oldfag_addons.modules.ElytraFlyPlus;
+
 import com.mojang.logging.LogUtils;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
 import meteordevelopment.meteorclient.commands.Commands;
@@ -14,15 +15,15 @@ import org.slf4j.Logger;
 
 public class Addon extends MeteorAddon {
     public static final Logger LOG = LogUtils.getLogger();
-    public static final Category CATEGORY = new Category("Example");
-    public static final HudGroup HUD_GROUP = new HudGroup("Example");
+    public static final Category CATEGORY = new Category("Oldfag");
+    public static final HudGroup HUD_GROUP = new HudGroup("Oldfag");
 
     @Override
     public void onInitialize() {
         LOG.info("Initializing Meteor Addon Template");
 
         // Modules
-        Modules.get().add(new ModuleExample());
+        Modules.get().add(new ElytraFlyPlus());
 
         // Commands
         Commands.add(new CommandExample());
@@ -38,6 +39,6 @@ public class Addon extends MeteorAddon {
 
     @Override
     public String getPackage() {
-        return "com.example.addon";
+        return "creamy.oldfag_addons";
     }
 }

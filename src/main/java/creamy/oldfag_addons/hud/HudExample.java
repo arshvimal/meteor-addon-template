@@ -1,6 +1,6 @@
-package com.example.addon.hud;
+package creamy.oldfag_addons.hud;
 
-import com.example.addon.Addon;
+import creamy.oldfag_addons.Addon;
 import meteordevelopment.meteorclient.systems.hud.HudElement;
 import meteordevelopment.meteorclient.systems.hud.HudElementInfo;
 import meteordevelopment.meteorclient.systems.hud.HudRenderer;
